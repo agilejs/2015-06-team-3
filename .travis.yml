@@ -16,7 +16,7 @@ before_deploy:
 - rm -rf neo4j-community-2.1.7 neo4j-community-2.1.7-unix.tar.gz
 deploy:
   provider: heroku
-  app: movie-database-node
+  app: agilejs-team3
   skip_cleanup: true
   api_key:
     secure: XHE66p2LzoDR7/Lea9gboQ5jfdQQbXgIly8QVyECT7C1oJSrzdmLqi3Kv+2keOWN2zeaEuGbzv2TSGuAsFP7nfpCNvLQv3c9veopqy1AfjiYySDxP3qyrHCi/eVuywDKUnMcIuvbdaF60w5AvNDzo+r993DsDrWJqISLPR0t5CbA3jlHivDF0hwyW3OEZ1unSzeQwoP1Fj3+KxA9/r4b3pqK6AnVuPFcD0ZJIgHIaw2Uf4O3JtwkzF1kjPNT62y7y5JbyYv2M4Xf0R9xFt+D65VXqn+9r89fN5iKnTzRbJG9PjfT4k8kQUA9ECfjWGjboSGZQzSX5274fI9DrPRK9JBh2uGyH+Zx3ylDKATrT2n0G0aPh6x3/KnJoOe9nJhHoca/QGyX3EQTmSyKr8QAsEOLAIPvg4LWHjuNUPdbTCAqWUlRX/ZzdQvFFAk2wz8FrUGC4Gpet32hxV6S/uEZvNcoGx/vlUhIpHw/ry/Dhsz4EVpU+8I4FId/HApBoBrsUvSBX/BHS12f7xMi3yaG+QcbaOtoDRD626eNXn3NpBTWSO68/BiMgPR94v0Glz3yAbqB6g2l91LzQqTYSa1e/LiMGBWvAJOWI8dBW7uL3ck1fLcvKZl9DvElC8O2lnpHuediROxMTHAM/2+fVdsLHl6bXZop8wblXKxCAiCxVcg=
