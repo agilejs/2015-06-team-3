@@ -3,6 +3,12 @@
 <dl class="dl-horizontal">
   <dt>Description</dt>
   <dd>{{movie.description}}</dd>
+  <dt>Release year</dt>
+  <dd>
+    {{movie.releaseYear}}
+    <span ng-if="!movie.releaseYear">unknown</span>
+  </dd>
+
 </dl>
 
 <a href="/movies/{{movie.id}}/edit" title="Edit movie" class="btn">
