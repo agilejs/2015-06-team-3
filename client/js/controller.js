@@ -3,8 +3,16 @@
 
     var app = angular.module('MovieDatabase');
 
-    app.controller('AppController', function($scope) {
+    app.controller('AppController', function($scope, $location) {
         $scope.title = 'The Movie Database';
+        $scope.getClass = function(path) {
+            if ($location.path().substr(0, path.length) === path ||
+              (path === 'home' && $location.path().length === 1)) {
+                return 'active';
+            } else {
+                return '';
+            }
+        };
     });
 
     app.controller('WelcomeController', function() {
