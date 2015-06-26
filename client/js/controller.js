@@ -12,8 +12,15 @@
 
     app.controller('MoviesListController',
         function($scope, $location, movieList) {
-
+        $scope.sortedColumn = 'title';
         $scope.movies = movieList.data;
+        $scope.sortBy = function (column) {
+            if($scope.sortedColumn === 'title') {
+                $scope.sortedColumn = '-title';
+            } else {
+                $scope.sortedColumn = 'title';
+            }
+        };
         $scope.add = function () {
             $location.path('/movies/new');
         };
@@ -60,5 +67,3 @@
     app.controller('NotFoundController', ProblemController);
     app.controller('ErrorController', ProblemController);
 })();
-
-
