@@ -5,6 +5,10 @@
               <a href="" ng-click="order('title')">Title</a>
               <span class="sortorder" ng-show="predicate === 'title'" ng-class="{reverse:reverse}"></span>
             </th>
+            <th>
+              <a href="" ng-click="order('releaseYear')">Release Year</a>
+              <span class="sortorder" ng-show="predicate === 'releaseYear'" ng-class="{reverse:reverse}"></span>
+            </th>
         </tr>
     </thead>
     <tbody>
@@ -12,6 +16,12 @@
             <td>
                 <a href="#" ng-href="/movies/{{movie.id}}">
                     {{movie.title}}
+                </a>
+            </td>
+            <td>
+                <a href="#" ng-href="/movies/{{movie.id}}">
+                    {{movie.releaseYear}}
+                    <span ng-if="!movie.releaseYear">unknown</span>
                 </a>
             </td>
         </tr>
