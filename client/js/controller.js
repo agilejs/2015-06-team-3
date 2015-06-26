@@ -14,12 +14,11 @@
         function($scope, $location, movieList) {
         $scope.sortedColumn = 'title';
         $scope.movies = movieList.data;
-        $scope.sortBy = function (column) {
-            if($scope.sortedColumn === 'title') {
-                $scope.sortedColumn = '-title';
-            } else {
-                $scope.sortedColumn = 'title';
-            }
+        $scope.predicate = 'title';
+        $scope.reverse = true;
+        $scope.order = function(predicate) {
+            $scope.reverse = ($scope.predicate === predicate) ? !$scope.reverse : false;
+            $scope.predicate = predicate;
         };
         $scope.add = function () {
             $location.path('/movies/new');
