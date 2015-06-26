@@ -20,8 +20,7 @@
             </td>
             <td>
                 <a href="#" ng-href="/movies/{{movie.id}}">
-                    {{movie.releaseYear}}
-                    <span ng-if="!movie.releaseYear">unknown</span>
+                    {{movie.releaseYear | unknownIfEmpty }}
                 </a>
             </td>
         </tr>

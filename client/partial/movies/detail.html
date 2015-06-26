@@ -5,8 +5,7 @@
   <dd>{{movie.description}}</dd>
   <dt>Release year</dt>
   <dd>
-    {{movie.releaseYear}}
-    <span ng-if="!movie.releaseYear">unknown</span>
+    {{movie.releaseYear | unknownIfEmpty }}
   </dd>
 
 </dl>
