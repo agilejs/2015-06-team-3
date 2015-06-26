@@ -20,7 +20,6 @@
 
     app.controller('MoviesListController',
         function($scope, $location, movieList) {
-        $scope.sortedColumn = 'title';
         $scope.movies = movieList.data;
         $scope.predicate = 'title';
         $scope.reverse = true;
